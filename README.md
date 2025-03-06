@@ -18,7 +18,7 @@ working app demo: https://database-example-452816.uc.r.appspot.com
 
 ## Used
 
-- Python
+- Python 3.11
 - Google App Engine
 - Google Cloud Datastore
 
