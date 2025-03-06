@@ -4,6 +4,8 @@ A Flask application that uses Google App Engine Datastore to store and manipulat
 
 working app demo: https://database-example-452816.uc.r.appspot.com
 
+<img width="928" alt="Screenshot 2025-03-06 at 13 51 13" src="https://github.com/user-attachments/assets/6e7b678e-2dd7-4e3e-be41-43b446a91553" />
+
 ## Features
 
 - SET: Set a variable to a specific value
