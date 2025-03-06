@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+h2 {
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.command-section, .output-section {
+    margin-bottom: 30px;
+}
+
+.command-group {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.form-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.buttons-only {
+    justify-content: flex-start;
+}
+
+input {
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    flex: 1;
+    font-size: 11px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 11px;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+button.danger {
+    background-color: #ea4335;
+}
+
+button.danger:hover {
+    background-color: #d33426;
+}
+
+.clear-btn {
+    background-color: #757575;
+    margin-top: 8px;
+}
+
+.clear-btn:hover {
+    background-color: #616161;
+}
+
+.output-container {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    min-height: 180px;
+    max-height: 350px;
+    overflow-y: auto;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 11px;
+}
+
+.output-entry {
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.output-entry:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.command {
+    color: #4285f4;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.result {
+    color: #333;
+    font-size: 11px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database example</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Database example</h1>
+        
+        <div class="command-section">
+            <h2>Commands</h2>
+            
+            <div class="command-group">
+                <h3>SET</h3>
+                <div class="form-group">
+                    <input type="text" id="set-name" placeholder="Variable name">
+                    <input type="text" id="set-value" placeholder="Value">
+                    <button onclick="executeSet()">Execute</button>
+                </div>
+            </div>
+            
+            <div class="command-group">
+                <h3>GET</h3>
+                <div class="form-group">
+                    <input type="text" id="get-name" placeholder="Variable name">
+                    <button onclick="executeGet()">Execute</button>
+                </div>
+            </div>
+            
+            <div class="command-group">
+                <h3>UNSET</h3>
+                <div class="form-group">
+                    <input type="text" id="unset-name" placeholder="Variable name">
+                    <button onclick="executeUnset()">Execute</button>
+                </div>
+            </div>
+            
+            <div class="command-group">
+                <h3>NUMEQUALTO</h3>
+                <div class="form-group">
+                    <input type="text" id="numequalto-value" placeholder="Value">
+                    <button onclick="executeNumEqualTo()">Execute</button>
+                </div>
+            </div>
+            
+            <div class="command-group">
+                <h3>UNDO / REDO</h3>
+                <div class="form-group buttons-only">
+                    <button onclick="executeUndo()">UNDO</button>
+                    <button onclick="executeRedo()">REDO</button>
+                </div>
+            </div>
+            
+            <div class="command-group">
+                <h3>END</h3>
+                <div class="form-group buttons-only">
+                    <button onclick="executeEnd()" class="danger">END (Clear All Data)</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="output-section">
+            <h2>Output</h2>
+            <div id="output" class="output-container"></div>
+            <button onclick="clearOutput()" class="clear-btn">Clear Output</button>
+        </div>
+    </div>
+    
+    <script src="/static/app.js"></script>
+</body>
+</html>
